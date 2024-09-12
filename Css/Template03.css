@@ -1,0 +1,64 @@
+*{
+padding:0;
+margin:0;
+box-sizing: border-box;
+text-decoration: none;
+font-family:'Times New Roman', Times, serif;
+}
+.WelcomeLogo{
+height: 90%;
+width: 90%;
+margin:auto;
+}
+
+.background{
+width:100%;
+height: 100vh;
+background-color:white;
+background-size: cover;
+display: flex;
+justify-content: center;
+align-items:center;
+}
+.background .text{
+width: 90%;
+margin:auto;
+}
+.background .text h4{
+font-size: 40px;
+color:black;
+font-weight: 500;
+margin-bottom: 10px;
+}
+.background .text h1{
+color:dodgerblue;
+font-size: 70px;
+text-decoration: uppercase;
+line-height: 1;
+margin-bottom: 30px;
+font-weight: bold;
+}
+.background .text h1 p{
+color: black;
+font-size:30px;
+margin-bottom: 30px;
+font-weight: lighter;
+}
+.background .text p{
+color: black;
+margin-bottom: 30px;
+font-size: 30px;
+}
+.background .text .btn{
+padding:10px 30px;
+background-color: dodgerblue;
+text-transform: uppercase;
+color:black;
+font-weight: bold;
+border-radius: 30px;
+border:2px solid black;
+transition: 0.4s;
+}
+.background .text .btn:hover{
+background-color: transparent;
+}

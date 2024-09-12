@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Chrome">
+<meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+<title>Register</title>
+<link rel="stylesheet"href="C:\Users\boith\OneDrive\Documentos\SMWSP_Collection\Css\Template02.css" type="text/css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+<script defer src="C:\Users\boith\OneDrive\Documentos\SMWSP_Collection\Jscript\CredentialsScript.js"></script>
+</head>
+<body>
+    <div class="RegisterPage">
+            <div class="formBox">
+                <form action="#">
+                    <div>
+                        <h2><i class="fa-solid fa-user-plus"></i></i>Register</h2>
+                    </div>
+                    <div class="input-box">
+                        <label>Username:</label>
+                        <input type="text" id="registerUsername" placeholder="Username"required="required">
+                        <span class="error-message" id="usernameError"></span>
+                    </div>
+                    <div class="input-box">
+                        <label> Email Address:</label>
+                        <input type="email" id="registerEmail"placeholder="Example@gmail.com" required="required">
+                        <span class="error-message" id="emailError"></span>
+                    </div>
+                    <div class="input-box">
+                        <label>Password:</label>
+                        <input type="Password" id="registerPassword" placeholder="Password" required="required">
+                        <span class="error-message" id="passwordError"></span>
+                    </div>  
+                    <div class="input-box">
+                        <label>Confirm Password:</label>
+                        <input type="Password" id="regisrerConfirmPassword"placeholder="Confirm Password"required="required">
+                        <span class="error-message" id="confirmPasswordError"></span>
+                    </div>
+                    <div class="TermsandConditions">
+                        <p>
+                            <input type="checkbox" id="termsAndConditions">
+                            I understand the terms and conditions.
+                        </p>
+                        <span class="error-message" id="termsError"></span>
+                        <a href="TermsAndConditions.html">T&Cs</a>
+                    </div>
+                    <button class="btn">
+                        <a href="Log In.html" id="registerButton">Register
+                        </a>
+                    </button>
+                    <div class="AlreadySigned">
+                        <span>Already have an account ? <a href="Log In.html" class="LogInLink" id="showLoginLink">Log In</a></span>
+                    </div>
+                </form>
+            </div>
+        </div>
+</body>
+</html>

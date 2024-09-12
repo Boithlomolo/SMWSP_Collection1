@@ -1,0 +1,146 @@
+*{
+padding:0;
+margin:0;
+box-sizing: border-box;
+text-decoration: none;
+font-family:'Times New Roman', Times, serif;
+}
+.Heading{
+width:905;
+display: flex;
+justify-content:center;
+align-items: center;
+flex-direction: column;
+text-align: center;
+margin:20px auto;
+}
+.Heading h1{
+font-size:50px;
+color:black;
+margin-bottom: 25px;
+position: relative;
+}
+.Heading p{
+font-size: 18px;
+margin-bottom:35px;
+}
+.Container{
+width:90%;
+margin: 0 auto;
+padding:10px 20px;
+}
+.about{
+display: flex;
+justify-content: space-between;
+align-items:center;
+flex-wrap:wrap;
+}
+.about-image{
+flex:1;
+margin-right: 40px;
+overflow:hidden;
+}
+.about-image img{
+max-width: 100%;
+height:auto;
+display: bock;
+transition: 0.5s ease;
+}
+.about-image:hover img{
+transform: scale(1.2);
+}
+.about-content{
+flex:1
+}
+.about-content h2{
+font-size: 23px;
+margin-bottom: 15px;
+color:dodgerblue;
+}
+.about-content p{
+font-size: 18px;
+line-height: 1.5;
+}
+.ContactUs{
+position: relative;
+min-height: 100vh;
+padding:50px 100px;
+display:flex;
+justify-content: center;
+align-items:center;
+flex-direction:column;
+}
+.ContainerCU{
+width:100%;
+display:flex;
+justify-content:center;
+align-items:center;
+margin-top:30px;
+}
+.ContainerCU .ContactInfo{
+width:50%;
+display: flex;
+flex-direction:column;
+}
+.ContainerCU .ContactInfo .Box{
+position:relative;
+padding:20px 0;
+display:flex;
+}
+.ContainerCU .ContactInfo .Box .Icon{
+min-width: 50px;
+height:50px;
+display:flex;
+justify-content:center;
+align-items:center;
+border-radius:50px;
+border: 1px solid dodgerblue;
+font-size: 20px;
+}
+.ContainerCU .ContactInfo .Box .Text h3{
+font-weight: 500;
+color:dodgerblue;
+}
+.ContactForm{
+width:400px;
+height:350px;
+padding:10px 30px;
+border-radius: 30px;
+border:1px solid lightgray;
+box-shadow: 0 0 5px black;
+}
+.ContainerCU .ContactForm .input-box{
+position: relative;
+width:100%;
+margin-top:10px;
+}
+.ContainerCU .ContactForm .input-box input,
+.ContainerCU .ContactForm .input-box textarea{
+width:100%;
+padding:5 px 0;
+font-size:16px;
+margin:10px 0;
+border: none;
+border-bottom: 2px solid black;
+outline:none;
+resize:none;
+}
+.ContactForm h2{
+color: dodgerblue;
+}
+.btn{
+height:45px;
+width:150px;
+border-radius:50px;
+color:black;
+background: dodgerblue;
+border: 2px solid black;
+outline:none;
+font-size: 16px;
+cursor:pointer;
+letter-spacing: 1px;
+}
+.ContactForm .btn:hover{
+background-color: transparent;
+}
+

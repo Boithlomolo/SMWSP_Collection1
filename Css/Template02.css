@@ -1,0 +1,145 @@
+*{
+margin:0;
+padding:0;
+box-sizing: border-box;
+text-decoration: none;
+font-family: 'Times New Roman', Times, serif;
+}
+body{
+background-position: center;
+height:100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.LogInPage,
+.ForgotPasswordPage{
+height: 550px;
+width: 500px;
+border:1px solid lightgray;
+border-radius: 10px;
+box-shadow: 0 0 5px black;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.RegisterPage{
+height: 630px;
+width: 500px;
+border:1px solid lightgray;
+border-radius: 10px;
+box-shadow: 0 0 5px black;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.formBox h2{
+text-align:center;
+color: black;
+font-size: 38px;
+font-weight: 600;
+}
+.formBox .input-box{
+margin:35px 0;
+width:330px;
+border-bottom: dodgerblue;
+position: relative;
+}
+.formBox .input-box input{
+border:none;
+outline:dodgerblue;
+width: 100%;
+height: 40px;
+padding: 0 35px 0 5px;
+border-radius: 5px;
+border: 1px solid black;
+}
+.formBox .input-box label{
+font-weight: 400;
+left:5px;
+top:50%;
+transform: translate(-50%);
+transition: 5s ease;
+}
+.input-box input:focus ~ label,
+.input-box input:valid ~ label{
+top:-5px;
+}
+.forgot-password{
+display: flex;
+justify-content: space-between;
+font-size:15px;
+margin:-15px 0 15px;
+}
+.forgot-password{
+display: flex;
+justify-content: space-between;
+font-size:15px;
+margin:-15px 0 15px;
+}
+.TermsAndConditions p{
+display: flex;
+align-items:center;
+}
+.forgot-password p input{
+accent-color:dodgerblue;
+margin:0 3px;
+}
+.TermsAndConditions p input{
+accent-color:dodgerblue;
+margin:0 3px;
+}
+.forgot-password a{
+text-decoration: none;
+}
+.TermsAndConditions a{
+text-decoration: none;
+}
+.btn{
+height:45px;
+width:100%;
+border-radius:50px;
+background: dodgerblue;
+border: 2px solid black;
+outline:none;
+font-size: 16px;
+cursor:pointer;
+letter-spacing: 1px;
+}
+.account-creation{
+text-align: center;
+margin: 25px 0 10px;
+font-weight: 400;
+font: size 14px;
+}
+.AlreadySigned{
+text-align: center;
+margin: 25px 0 10px;
+font-weight: 400;
+font: size 14px;
+}
+.AlreadySigned span a{
+text-decoration: none;
+}
+.account-creation a:hover,
+.AlreadySigned a:hover{
+text-decoration: underline;
+}
+.Logo{
+display: flex;
+margin-inline: auto;
+}
+.LogInPage .formBox .btn:hover,
+.RegisterPage .formBox .btn:hover,
+.ForgotPasswordPage .formBox .btn:hover{
+background-color: transparent;
+}
+.Instructions {
+margin-bottom:20px;
+}
+.Instructions p{
+margin:0;
+font-size:16px;
+color:black;
+text-align:center;
+}
