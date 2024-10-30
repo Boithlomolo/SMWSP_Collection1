@@ -1,145 +1,233 @@
-*{
-margin:0;
-padding:0;
+* {
+margin: 0;
+padding: 0;
 box-sizing: border-box;
-text-decoration: none;
-font-family: 'Times New Roman', Times, serif;
+font-family: 'Arial', sans-serif;
 }
-body{
-background-position: center;
-height:100vh;
+body {
 display: flex;
 justify-content: center;
 align-items: center;
+height: 100vh;
+margin: 0;
+background-color: snow;
 }
-.LogInPage,
-.ForgotPasswordPage{
-height: 550px;
-width: 500px;
-border:1px solid lightgray;
-border-radius: 10px;
-box-shadow: 0 0 5px black;
-display: flex;
-justify-content: center;
-align-items: center;
-}
-.RegisterPage{
-height: 630px;
-width: 500px;
-border:1px solid lightgray;
-border-radius: 10px;
-box-shadow: 0 0 5px black;
-display: flex;
-justify-content: center;
-align-items: center;
-}
-.formBox h2{
-text-align:center;
-color: black;
-font-size: 38px;
-font-weight: 600;
-}
-.formBox .input-box{
-margin:35px 0;
-width:330px;
-border-bottom: dodgerblue;
-position: relative;
-}
-.formBox .input-box input{
-border:none;
-outline:dodgerblue;
+.login-container {
 width: 100%;
-height: 40px;
-padding: 0 35px 0 5px;
+max-width: 400px;
+padding: 20px;
+background-color: white;
+border-radius: 10px;
+box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+animation: fadeIn 1s ease-in-out;
+}
+.formBox {
+padding: 20px;
+}
+.login-header h2 {
+font-size: 2rem;
+color: #333;
+margin-bottom: 5px;
+text-align: center;
+}
+.login-header p {
+color: #666;
+text-align: center;
+margin-bottom: 20px;
+}
+.input-box {
+margin-bottom: 15px;
+display: flex;
+flex-direction: column;
+}
+.input-box label {
+margin-bottom: 5px;
+color: #333;
+}
+.input-box input {
+padding: 10px;
 border-radius: 5px;
-border: 1px solid black;
+border: 1px solid #ccc;
+outline: none;
+transition: border-color 0.3s ease;
 }
-.formBox .input-box label{
-font-weight: 400;
-left:5px;
-top:50%;
-transform: translate(-50%);
-transition: 5s ease;
+.input-box input:focus {
+border-color: #6E85B7;
 }
-.input-box input:focus ~ label,
-.input-box input:valid ~ label{
-top:-5px;
-}
-.forgot-password{
+.forgot-password {
 display: flex;
 justify-content: space-between;
-font-size:15px;
-margin:-15px 0 15px;
+align-items: center;
+margin-bottom: 20px;
+font-size: 0.9rem;
 }
-.forgot-password{
-display: flex;
-justify-content: space-between;
-font-size:15px;
-margin:-15px 0 15px;
-}
-.TermsAndConditions p{
-display: flex;
-align-items:center;
-}
-.forgot-password p input{
-accent-color:dodgerblue;
-margin:0 3px;
-}
-.TermsAndConditions p input{
-accent-color:dodgerblue;
-margin:0 3px;
-}
-.forgot-password a{
+.forgot-password a {
+color: #6E85B7;
 text-decoration: none;
+transition: color 0.3s ease;
 }
-.TermsAndConditions a{
-text-decoration: none;
+.forgot-password a:hover {
+color: #333;
 }
-.btn{
-height:45px;
-width:100%;
-border-radius:50px;
-background: dodgerblue;
-border: 2px solid black;
-outline:none;
-font-size: 16px;
-cursor:pointer;
-letter-spacing: 1px;
+.btn {
+width: 100%;
+padding: 10px;
+background-color: white;
+color: white;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+font-size: 1rem;
+transition: background-color 0.3s ease;
 }
-.account-creation{
+.btn:hover {
+ background-color: #B1D0E0;
+}
+.account-creation {
 text-align: center;
-margin: 25px 0 10px;
-font-weight: 400;
-font: size 14px;
+margin-top: 15px;
 }
-.AlreadySigned{
-text-align: center;
-margin: 25px 0 10px;
-font-weight: 400;
-font: size 14px;
-}
-.AlreadySigned span a{
+.account-creation .register-link {
+color: #6E85B7;
 text-decoration: none;
+font-weight: bold;
+transition: color 0.3s ease;
 }
-.account-creation a:hover,
-.AlreadySigned a:hover{
-text-decoration: underline;
+.account-creation .register-link:hover {
+color: #333;
 }
-.Logo{
+@keyframes fadeIn {
+from {
+    opacity: 0;
+transform: translateY(-20px);
+ }
+to {
+opacity: 1;
+transform: translateY(0);
+}
+}
+/* Join */
+.register-container {
+width: 500px;
+padding: 20px;
+background-color: white;
+border-radius: 10px;
+box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+animation: fadeIn 1s ease-in-out;
+}
+.formBox {
+padding: 20px;
+}
+.register-header h2 {
+font-size: 2rem;
+color: #333;
+margin-bottom: 5px;
+text-align: center;
+}
+.register-header p {
+color: #666;
+text-align: center;
+margin-bottom: 20px;
+}
+.input-box {
+margin-bottom: 15px;
 display: flex;
-margin-inline: auto;
+flex-direction: column;
 }
-.LogInPage .formBox .btn:hover,
-.RegisterPage .formBox .btn:hover,
-.ForgotPasswordPage .formBox .btn:hover{
-background-color: transparent;
+.input-box label {
+margin-bottom: 5px;
+color: #333;
 }
-.Instructions {
-margin-bottom:20px;
+.input-box input {
+padding: 10px;
+border-radius: 5px;
+border: 1px solid #ccc;
+outline: none;
+transition: border-color 0.3s ease;
 }
-.Instructions p{
-margin:0;
-font-size:16px;
-color:black;
-text-align:center;
+.input-box input:focus {
+border-color: #6E85B7;
+}
+.error-message {
+color: red;
+font-size: 0.8rem;
+margin-top: 5px;
+}
+.terms-and-conditions {
+margin-bottom: 15px;
+font-size: 0.9rem;
+}
+.terms-and-conditions a {
+color: #6E85B7;
+text-decoration: none;
+transition: color 0.3s ease;
+}
+.terms-and-conditions a:hover {
+color: #333;
+}
+.btn {
+width: 100%;
+padding: 10px;
+background-color: #6E85B7;
+color: white;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+font-size: 1rem;
+transition: background-color 0.3s ease;
+}
+.bn:hover {
+background-color: #B1D0E0;
+}
+.already-signed {
+text-align: center;
+margin-top: 15px;
+}
+.already-signed .logInLink {
+color: #6E85B7;
+text-decoration: none;
+font-weight: bold;
+transition: color 0.3s ease;
+}
+.already-signed .logInLink:hover {
+color: #333;
+}
+@keyframes fadeIn {
+from {
+opacity: 0;
+transform: translateY(-20px);
+}
+to {
+opacity: 1;
+transform: translateY(0);
+}
+}
+/* Forgot Password */
+.ForgotPasswordPage {
+display: flex;
+justify-content: center;
+align-items: center;
+width: 100%;
+height: 100vh;
+}
+.formBoxPP {
+background-color: white;
+padding: 40px;
+border-radius: 10px;
+box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+max-width: 400px;
+width: 100%;
+}
+.heading h2 {
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.instructions p {
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+    margin-bottom: 30px;
 }

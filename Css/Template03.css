@@ -9,7 +9,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('https://images.unsplash.com/photo-1498335746477-0c73d7353a07?q=80&w=2030&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-image: url('https://images.unsplash.com/photo-1610397646052-fbbd1ffcd29a?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
 }
 @keyframes gradient {
     0% { background-position: 0% 50%; }
@@ -37,7 +37,7 @@ body {
     100% { opacity: 1; }
 }
 .text h1 {
-    font-size: 3em;
+    font-size: 1.8em;
     margin-bottom: 10px;
     letter-spacing: 3px;
     color: #fff;
@@ -45,8 +45,8 @@ body {
     animation: textGlow 2s ease-in-out infinite alternate;
 }
 @keyframes textGlow {
-    0% { text-shadow: 0 0 10px dodgerblue, 0 0 20px blue, 0 0 30px skyblue; }
-    100% { text-shadow: 0 0 20px dodgerblue, 0 0 30px blue, 0 0 40px skyblue; }
+    0% { text-shadow: 0 0 10px black; }
+    100% { text-shadow: 0 0 20px black;}
 }
 .text p {
     font-size: 1.2em;
@@ -60,7 +60,7 @@ body {
     color: white;
     border-radius: 50px;
     text-decoration: none;
-    font-size: 1.2em;
+    font-size: 0.8em;
     text-transform: uppercase;
     letter-spacing: 2px;
     transition: all 0.4s ease;
@@ -72,7 +72,7 @@ body {
     100% { transform: scale(1); }
 }
 .text .btn:hover {
-    background-color: dodgerblue;
+    background-color: #6E85B7;
     transform: translateY(-5px);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
