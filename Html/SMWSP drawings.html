@@ -13,22 +13,33 @@
     <div class="Cont">
         <div class="Logo">
           <img src="C:\Users\boith\OneDrive\Documentos\SMWSP_Collection\Sat_13_07_2024_00_51_12.png"alt="Logo"width="250"height="80">
-         </div>
-          <div class="Search">
+        </div>
+        <div class="Search">
               <input type="text" class="Search-input" placeholder="Search Images and Illustrations...">
               <button class="Search-button">
                   <i class="fas fa-search"></i>
               </button>
-            </div>
-            <div class="Cont2">
-                <div class="Signed">
+        </div>
+        <div class="Cont2">
+            <div class="Signed">
                     <a href="Log In.html">Log In</a>
-                </div>
-                  <div class="MyCollection">
+            </div>
+                <div class="MyCollection">
                     <a href="MyCollection.html">My Collection</a>
-                 </div>
+                </div>
+            <div class="menu-bar">
+                <i class="fa-solid fa-bars fa-fade" onclick="toggleDropdown()"></i>
+            <div class="dropdown" id="moreInfoDropdown">
+                    <ul>
+                        <li><a href="SMWSP_Collection.html">Home</a></li>
+                        <li><a href="Service.html">Service</a></li>
+                        <li><a href="Contact Us.html">Contact Us</a></li>
+                        <li><a href="AboutUs.html">About Us</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
+    </div>
     <nav>
         <ul>
                 <li><a href="Motivation.html">Motivation</a></li>
@@ -57,117 +68,144 @@
     <div class="Container">
         <div class="Image">
             <img src="C:\Users\boith\OneDrive\Documentos\SMWSP_Collection\Images\SMWSP_Collection drawings\8a342bf40604f123a4453a52a242b886.jpg" title="Vintage"width="388"height="400">
-            <button class="Download"><i class="fa-solid fa-download" title="Download image"></i></button>
-            <button class="Like" onclick="toggleLike(this)"><i class="fa-solid fa-heart" title="Like image"></i></button>
-            <button class="AddF"><i class="fa-solid fa-plus" title="Add image to collection"></i></button>
+            <button class="Download"><i class="fa-solid fa-download fa-fade" title="Download image"></i></button>
+            <button class="Like" onclick="toggleLike(this)"><i class="fa-solid fa-heart fa-fade" title="Like image"></i></button>
+            <button class="AddF"  onclick="addToCollection(this)"><i class="fa-solid fa-plus fa-fade" title="Add image to collection"></i></button>
         </div>
         <div class="Image">
             <img src="C:\Users\boith\OneDrive\Documentos\SMWSP_Collection\Images\SMWSP_Collection drawings\1608379002472.jpg" title="Side View"width="388"height="400">
-            <button class="Download"><i class="fa-solid fa-download" title="Download image"></i></button>
-            <button class="Like" onclick="toggleLike(this)"><i class="fa-solid fa-heart" title="Like image"></i></button>
-            <button class="AddF"><i class="fa-solid fa-plus" title="Add image to collection"></i></button>
+            <button class="Download"><i class="fa-solid fa-download fa-fade" title="Download image"></i></button>
+            <button class="Like" onclick="toggleLike(this)"><i class="fa-solid fa-heart fa-fade" title="Like image"></i></button>
+            <button class="AddF"  onclick="addToCollection(this)"><i class="fa-solid fa-plus fa-fade" title="Add image to collection"></i></button>
         </div>
         <div class="Image">
             <img src="C:\Users\boith\OneDrive\Documentos\SMWSP_Collection\Images\SMWSP_Collection drawings\IMG_20190301_154053.jpg" title="Emtee and Avery"width="388"height="400">
-            <button class="Download"><i class="fa-solid fa-download" title="Download image"></i></button>
-            <button class="Like" onclick="toggleLike(this)"><i class="fa-solid fa-heart" title="Like image"></i></button>
-            <button class="AddF"><i class="fa-solid fa-plus" title="Add image to collection"></i></button>
+            <button class="Download"><i class="fa-solid fa-download fa-fade" title="Download image"></i></button>
+            <button class="Like" onclick="toggleLike(this)"><i class="fa-solid fa-heart fa-fade" title="Like image"></i></button>
+            <button class="AddF"  onclick="addToCollection(this)"><i class="fa-solid fa-plus fa-fade" title="Add image to collection"></i></button>
         </div>
         <div class="Image">
             <img src="C:\Users\boith\OneDrive\Documentos\SMWSP_Collection\Images\SMWSP_Collection drawings\IMG_20190512_173022.jpg" title="Miss Vandiez"width="388"height="400">
-            <button class="Download"><i class="fa-solid fa-download" title="Download image"></i></button>
-            <button class="Like" onclick="toggleLike(this)"><i class="fa-solid fa-heart" title="Like image"></i></button>
-            <button class="AddF"><i class="fa-solid fa-plus" title="Add image to collection"></i></button>
+            <button class="Download"><i class="fa-solid fa-download fa-fade" title="Download image"></i></button>
+            <button class="Like" onclick="toggleLike(this)"><i class="fa-solid fa-heart fa-fade" title="Like image"></i></button>
+            <button class="AddF"  onclick="addToCollection(this)"><i class="fa-solid fa-plus fa-fade" title="Add image to collection"></i></button>
         </div>
         <div class="Image">
             <img src="C:\Users\boith\OneDrive\Documentos\SMWSP_Collection\Images\SMWSP_Collection drawings\IMG_20191015_145720.jpg" title="Music "width="388"height="400">
-            <button class="Download"><i class="fa-solid fa-download" title="Download image"></i></button>
-            <button class="Like" onclick="toggleLike(this)"><i class="fa-solid fa-heart" title="Like image"></i></button>
-            <button class="AddF"><i class="fa-solid fa-plus" title="Add image to collection"></i></button>
+            <button class="Download"><i class="fa-solid fa-download fa-fade" title="Download image"></i></button>
+            <button class="Like" onclick="toggleLike(this)"><i class="fa-solid fa-heart fa-fade" title="Like image"></i></button>
+            <button class="AddF"  onclick="addToCollection(this)"><i class="fa-solid fa-plus fa-fade" title="Add image to collection"></i></button>
         </div>
         <div class="Image">
             <img src="C:\Users\boith\OneDrive\Documentos\SMWSP_Collection\Images\SMWSP_Collection drawings\IMG_20191115_143806.jpg" title="Miss Cool"width="388"height="400">
-            <button class="Download"><i class="fa-solid fa-download" title="Download image"></i></button>
-            <button class="Like" onclick="toggleLike(this)"><i class="fa-solid fa-heart" title="Like image"></i></button>
-            <button class="AddF"><i class="fa-solid fa-plus" title="Add image to collection"></i></button>
+            <button class="Download"><i class="fa-solid fa-download fa-fade" title="Download image"></i></button>
+            <button class="Like" onclick="toggleLike(this)"><i class="fa-solid fa-heart fa-fade" title="Like image"></i></button>
+            <button class="AddF"  onclick="addToCollection(this)"><i class="fa-solid fa-plus fa-fade" title="Add image to collection"></i></button>
         </div>
         <div class="Image">
             <img src="C:\Users\boith\OneDrive\Documentos\SMWSP_Collection\Images\SMWSP_Collection drawings\IMG_20191118_150501.jpg" title="Mr cool hair"width="388"height="400">
-            <button class="Download"><i class="fa-solid fa-download" title="Download image"></i></button>
-            <button class="Like" onclick="toggleLike(this)"><i class="fa-solid fa-heart" title="Like image"></i></button>
-            <button class="AddF"><i class="fa-solid fa-plus" title="Add image to collection"></i></button>
+            <button class="Download"><i class="fa-solid fa-download fa-fade" title="Download image"></i></button>
+            <button class="Like" onclick="toggleLike(this)"><i class="fa-solid fa-heart fa-fade" title="Like image"></i></button>
+            <button class="AddF"  onclick="addToCollection(this)"><i class="fa-solid fa-plus fa-fade" title="Add image to collection"></i></button>
         </div>
         <div class="Image">
             <img src="C:\Users\boith\OneDrive\Documentos\SMWSP_Collection\Images\SMWSP_Collection drawings\IMG_20191219_141912.png" title="Face Off"width="388"height="400">
-            <button class="Download"><i class="fa-solid fa-download" title="Download image"></i></button>
-            <button class="Like" onclick="toggleLike(this)"><i class="fa-solid fa-heart" title="Like image"></i></button>
-            <button class="AddF"><i class="fa-solid fa-plus" title="Add image to collection"></i></button>
+            <button class="Download"><i class="fa-solid fa-download fa-fade" title="Download image"></i></button>
+            <button class="Like" onclick="toggleLike(this)"><i class="fa-solid fa-heart fa-fade" title="Like image"></i></button>
+            <button class="AddF"  onclick="addToCollection(this)"><i class="fa-solid fa-plus fa-fade" title="Add image to collection"></i></button>
         </div>
         <div class="Image">
             <img src= "C:\Users\boith\OneDrive\Documentos\SMWSP_Collection\Images\SMWSP_Collection drawings\IMG_20191219_150655.jpg"title="Miss herself"width="388"height="400">
-            <button class="Download"><i class="fa-solid fa-download" title="Download image"></i></button>
-            <button class="Like" onclick="toggleLike(this)"><i class="fa-solid fa-heart" title="Like image"></i></button>
-            <button class="AddF"><i class="fa-solid fa-plus" title="Add image to collection"></i></button>
+            <button class="Download"><i class="fa-solid fa-download fa-fade" title="Download image"></i></button>
+            <button class="Like" onclick="toggleLike(this)"><i class="fa-solid fa-heart fa-fade" title="Like image"></i></button>
+            <button class="AddF"  onclick="addToCollection(this)"><i class="fa-solid fa-plus fa-fade" title="Add image to collection"></i></button>
         </div>
         <div class="Image">
             <img src="C:\Users\boith\OneDrive\Documentos\SMWSP_Collection\Images\SMWSP_Collection drawings\IMG_20221024_113919.jpg" title="Gregor Mendel"width="388"height="400">
-            <button class="Download"><i class="fa-solid fa-download" title="Download image"></i></button>
-            <button class="Like" onclick="toggleLike(this)"><i class="fa-solid fa-heart" title="Like image"></i></button>
-            <button class="AddF"><i class="fa-solid fa-plus" title="Add image to collection"></i></button>
+            <button class="Download"><i class="fa-solid fa-download fa-fade" title="Download image"></i></button>
+            <button class="Like" onclick="toggleLike(this)"><i class="fa-solid fa-heart fa-fade" title="Like image"></i></button>
+            <button class="AddF"  onclick="addToCollection(this)"><i class="fa-solid fa-plus fa-fade" title="Add image to collection"></i></button>
         </div>
         <div class="Image">
             <img src="C:\Users\boith\OneDrive\Documentos\SMWSP_Collection\Images\SMWSP_Collection drawings\IMG_20230205_181245.jpg" title="High"width="388"height="400">
-            <button class="Download"><i class="fa-solid fa-download" title="Download image"></i></button>
-            <button class="Like" onclick="toggleLike(this)"><i class="fa-solid fa-heart" title="Like image"></i></button>
-            <button class="AddF"><i class="fa-solid fa-plus" title="Add image to collection"></i></button>
+            <button class="Download"><i class="fa-solid fa-download fa-fade" title="Download image"></i></button>
+            <button class="Like" onclick="toggleLike(this)"><i class="fa-solid fa-heart fa-fade" title="Like image"></i></button>
+            <button class="AddF"  onclick="addToCollection(this)"><i class="fa-solid fa-plus fa-fade" title="Add image to collection"></i></button>
         </div>
         <div class="Image">
             <img src="C:\Users\boith\OneDrive\Documentos\SMWSP_Collection\Images\SMWSP_Collection drawings\IMG_20231123_154809.jpg" title="Freemans"width="388"height="400">
-            <button class="Download"><i class="fa-solid fa-download" title="Download image"></i></button>
-            <button class="Like" onclick="toggleLike(this)"><i class="fa-solid fa-heart" title="Like image"></i></button>
-            <button class="AddF"><i class="fa-solid fa-plus" title="Add image to collection"></i></button>
+            <button class="Download"><i class="fa-solid fa-download fa-fade" title="Download image"></i></button>
+            <button class="Like" onclick="toggleLike(this)"><i class="fa-solid fa-heart fa-fade" title="Like image"></i></button>
+            <button class="AddF"  onclick="addToCollection(this)"><i class="fa-solid fa-plus fa-fade" title="Add image to collection"></i></button>
         </div>
         <div class="Image">
             <img src="C:\Users\boith\OneDrive\Documentos\SMWSP_Collection\Images\SMWSP_Collection drawings\IMG_20240215_184934.jpg" title="Huey"width="388"height="400">
-            <button class="Download"><i class="fa-solid fa-download" title="Download image"></i></button>
-            <button class="Like" onclick="toggleLike(this)"><i class="fa-solid fa-heart" title="Like image"></i></button>
-            <button class="AddF"><i class="fa-solid fa-plus" title="Add image to collection"></i></button>
+            <button class="Download"><i class="fa-solid fa-download fa-fade" title="Download image"></i></button>
+            <button class="Like" onclick="toggleLike(this)"><i class="fa-solid fa-heart fa-fade" title="Like image"></i></button>
+            <button class="AddF"  onclick="addToCollection(this)"><i class="fa-solid fa-plus fa-fade" title="Add image to collection"></i></button>
         </div>
         <div class="Image">
             <img src="C:\Users\boith\OneDrive\Documentos\SMWSP_Collection\Images\SMWSP_Collection drawings\Screenshot_20240606_002044_com.android.gallery3d.jpg"title="J Cole"width="388"height="400">
-            <button class="Download"><i class="fa-solid fa-download" title="Download image"></i></button>
-            <button class="Like" onclick="toggleLike(this)"><i class="fa-solid fa-heart" title="Like image"></i></button>
-            <button class="AddF"><i class="fa-solid fa-plus" title="Add image to collection"></i></button>
+            <button class="Download"><i class="fa-solid fa-download fa-fade" title="Download image"></i></button>
+            <button class="Like" onclick="toggleLike(this)"><i class="fa-solid fa-heart fa-fade" title="Like image"></i></button>
+            <button class="AddF"  onclick="addToCollection(this)"><i class="fa-solid fa-plus fa-fade" title="Add image to collection"></i></button>
         </div>
         <div class="Image">
             <img src="C:\Users\boith\OneDrive\Documentos\SMWSP_Collection\Images\SMWSP_Collection drawings\IMG_20240215_185004.jpg" title="uncle ruckes"width="388"height="400">
-            <button class="Download"><i class="fa-solid fa-download" title="Download image"></i></button>
-            <button class="Like" onclick="toggleLike(this)"><i class="fa-solid fa-heart" title="Like image"></i></button>
-            <button class="AddF"><i class="fa-solid fa-plus" title="Add image to collection"></i></button>
+            <button class="Download"><i class="fa-solid fa-download fa-fade" title="Download image"></i></button>
+            <button class="Like" onclick="toggleLike(this)"><i class="fa-solid fa-heart fa-fade" title="Like image"></i></button>
+            <button class="AddF"  onclick="addToCollection(this)"><i class="fa-solid fa-plus fa-fade" title="Add image to collection"></i></button>
         </div>
         <div class="Image">
             <img src="C:\Users\boith\OneDrive\Documentos\SMWSP_Collection\Images\SMWSP_Collection drawings\IMG_20240220_132648.jpg" title="Rick"width="388"height="400">
-            <button class="Download"><i class="fa-solid fa-download" title="Download image"></i></button>
-            <button class="Like" onclick="toggleLike(this)"><i class="fa-solid fa-heart" title="Like image"></i></button>
-            <button class="AddF"><i class="fa-solid fa-plus" title="Add image to collection"></i></button>
+            <button class="Download"><i class="fa-solid fa-download fa-fade" title="Download image"></i></button>
+            <button class="Like" onclick="toggleLike(this)"><i class="fa-solid fa-heart fa-fade" title="Like image"></i></button>
+            <button class="AddF"  onclick="addToCollection(this)"><i class="fa-solid fa-plus fa-fade" title="Add image to collection"></i></button>
         </div>
         <div class="Image">
             <img src= "C:\Users\boith\OneDrive\Documentos\SMWSP_Collection\Images\SMWSP_Collection drawings\Screenshot_20191215-201153.png"title="Art"width="388"height="400">
-            <button class="Download"><i class="fa-solid fa-download" title="Download image"></i></button>
-            <button class="Like" onclick="toggleLike(this)"><i class="fa-solid fa-heart" title="Like image"></i></button>
-            <button class="AddF"><i class="fa-solid fa-plus" title="Add image to collection"></i></button>
+            <button class="Download"><i class="fa-solid fa-download fa-fade" title="Download image"></i></button>
+            <button class="Like" onclick="toggleLike(this)"><i class="fa-solid fa-heart fa-fade" title="Like image"></i></button>
+            <button class="AddF"  onclick="addToCollection(this)"><i class="fa-solid fa-plus fa-fade" title="Add image to collection"></i></button>
         </div>
     </div>
-    <div class="MoreInfo">
-        <div class="MOI">More Info:</div>
-            <ul>
-            <li><a href="SMWSP_Collection.html">Home</a></li>
-            <li><a href="Service.html">Service</a></li>
-            <li><a href="Contact Us.html">Contact Us</a></li>
-            <li><a href="AboutUs.html">About Us</a></li>
-            </ul>
-            </p>
-    </div>
-    <div class="TYFV">Thank you for visiting.</div>
-</body>
+    <footer id="contact">
+        <p>&copy; 2024 SMWSP Collection | Contact us: 
+            <a href="mailto:boithlomolo@gmail.com">Boithlomolo@gmail.com</a> 
+            <a href="tel:0679309258">067 930 9258</a>
+        </p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.twitter.com" target="_blank" aria-label="Twitter">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <div class="TYFV">Thank you for visiting.</div>
+        </div>
+    </footer>
+    </body>
+    <script>
+        // add containers
+        window.addEventListener('load', function() {
+            document.body.classList.add('loaded');
+        });
+    
+        // //menu bar
+        function toggleDropdown() {
+        const dropdown = document.getElementById('moreInfoDropdown');
+        dropdown.classList.toggle('show');
+    }
+
+    // Close dropdown if clicked outside
+    window.onclick = function(event) {
+        const dropdown = document.getElementById("moreInfoDropdown");
+        if (!event.target.closest('.menu-bar') && !event.target.closest('.dropdown')) {
+            dropdown.classList.remove('show');
+        }
+    }
+    </script>
 </html>

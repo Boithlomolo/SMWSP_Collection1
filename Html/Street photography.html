@@ -13,22 +13,33 @@
     <div class="Cont">
         <div class="Logo">
           <img src="C:\Users\boith\OneDrive\Documentos\SMWSP_Collection\Sat_13_07_2024_00_51_12.png"alt="Logo"width="250"height="80">
-         </div>
-          <div class="Search">
+        </div>
+        <div class="Search">
               <input type="text" class="Search-input" placeholder="Search Images and Illustrations...">
               <button class="Search-button">
                   <i class="fas fa-search"></i>
               </button>
-            </div>
-            <div class="Cont2">
-                <div class="Signed">
+        </div>
+        <div class="Cont2">
+            <div class="Signed">
                     <a href="Log In.html">Log In</a>
-                </div>
-                  <div class="MyCollection">
+            </div>
+                <div class="MyCollection">
                     <a href="MyCollection.html">My Collection</a>
-                 </div>
+                </div>
+            <div class="menu-bar">
+                <i class="fa-solid fa-bars" onclick="toggleDropdown()"></i>
+            <div class="dropdown" id="moreInfoDropdown">
+                    <ul>
+                        <li><a href="SMWSP_Collection.html">Home</a></li>
+                        <li><a href="Service.html">Service</a></li>
+                        <li><a href="Contact Us.html">Contact Us</a></li>
+                        <li><a href="AboutUs.html">About Us</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
+    </div>
     <nav>
         <ul>
                 <li><a href="Motivation.html">Motivation</a></li>
@@ -57,88 +68,115 @@
     <div class="Container">
         <div class="Image">
             <img src="C:\Users\boith\OneDrive\Documentos\SMWSP_Collection\Images\Street Photography\brad-fickeisen-Yf1dL-A92dI-unsplash.jpg"title="Street"width="388"height="400">
-            <button class="Download"><i class="fa-solid fa-download" title="Download image"></i></button>
-            <button class="Like" onclick="toggleLike(this)"><i class="fa-solid fa-heart" title="Like image"></i></button>
-            <button class="AddF"><i class="fa-solid fa-plus" title="Add image to collection"></i></button>
+            <button class="Download"><i class="fa-solid fa-download fa-fade" title="Download image"></i></button>
+            <button class="Like" onclick="toggleLike(this)"><i class="fa-solid fa-heart fa-fade" title="Like image"></i></button>
+            <button class="AddF"  onclick="addToCollection(this)"><i class="fa-solid fa-plus fa-fade" title="Add image to collection"></i></button>
         </div>
         <div class="Image">
             <img src="C:\Users\boith\OneDrive\Documentos\SMWSP_Collection\Images\Street Photography\cin-RjArqbro52o-unsplash.jpg"title="China Town"width="388"height="400">
-            <button class="Download"><i class="fa-solid fa-download" title="Download image"></i></button>
-            <button class="Like" onclick="toggleLike(this)"><i class="fa-solid fa-heart" title="Like image"></i></button>
-            <button class="AddF"><i class="fa-solid fa-plus" title="Add image to collection"></i></button>
+            <button class="Download"><i class="fa-solid fa-download fa-fade" title="Download image"></i></button>
+            <button class="Like" onclick="toggleLike(this)"><i class="fa-solid fa-heart fa-fade" title="Like image"></i></button>
+            <button class="AddF"  onclick="addToCollection(this)"><i class="fa-solid fa-plus fa-fade" title="Add image to collection"></i></button>
         </div>
         <div class="Image">
             <img src="C:\Users\boith\OneDrive\Documentos\SMWSP_Collection\Images\Street Photography\edoardo-cuoghi-UmWEalRVEb0-unsplash.jpg"title="Street"width="388"height="400">
-            <button class="Download"><i class="fa-solid fa-download" title="Download image"></i></button>
-            <button class="Like" onclick="toggleLike(this)"><i class="fa-solid fa-heart" title="Like image"></i></button>
-            <button class="AddF"><i class="fa-solid fa-plus" title="Add image to collection"></i></button>
+            <button class="Download"><i class="fa-solid fa-download fa-fade" title="Download image"></i></button>
+            <button class="Like" onclick="toggleLike(this)"><i class="fa-solid fa-heart fa-fade" title="Like image"></i></button>
+            <button class="AddF"  onclick="addToCollection(this)"><i class="fa-solid fa-plus fa-fade" title="Add image to collection"></i></button>
         </div>
         <div class="Image">
             <img src="C:\Users\boith\OneDrive\Documentos\SMWSP_Collection\Images\Street Photography\jc-gellidon-tbmLreXHkLU-unsplash.jpg"title="Backstreet"width="388"height="400">
-            <button class="Download"><i class="fa-solid fa-download" title="Download image"></i></button>
-            <button class="Like" onclick="toggleLike(this)"><i class="fa-solid fa-heart" title="Like image"></i></button>
-            <button class="AddF"><i class="fa-solid fa-plus" title="Add image to collection"></i></button>
+            <button class="Download"><i class="fa-solid fa-download fa-fade" title="Download image"></i></button>
+            <button class="Like" onclick="toggleLike(this)"><i class="fa-solid fa-heart fa-fade" title="Like image"></i></button>
+            <button class="AddF"  onclick="addToCollection(this)"><i class="fa-solid fa-plus fa-fade" title="Add image to collection"></i></button>
         </div>
         <div class="Image">
             <img src="C:\Users\boith\OneDrive\Documentos\SMWSP_Collection\Images\Street Photography\karim-manjra-oNDRCGrqaYc-unsplash.jpg"title="Italia"width="388"height="400">
-            <button class="Download"><i class="fa-solid fa-download" title="Download image"></i></button>
-            <button class="Like" onclick="toggleLike(this)"><i class="fa-solid fa-heart" title="Like image"></i></button>
-            <button class="AddF"><i class="fa-solid fa-plus" title="Add image to collection"></i></button>
+            <button class="Download"><i class="fa-solid fa-download fa-fade" title="Download image"></i></button>
+            <button class="Like" onclick="toggleLike(this)"><i class="fa-solid fa-heart fa-fade" title="Like image"></i></button>
+            <button class="AddF"  onclick="addToCollection(this)"><i class="fa-solid fa-plus fa-fade" title="Add image to collection"></i></button>
         </div>
         <div class="Image">
             <img src="C:\Users\boith\OneDrive\Documentos\SMWSP_Collection\Images\Street Photography\manson-yim-vFp5KViAzBU-unsplash.jpg"title="China Busy Street"width="388"height="400">
-            <button class="Download"><i class="fa-solid fa-download" title="Download image"></i></button>
-            <button class="Like" onclick="toggleLike(this)"><i class="fa-solid fa-heart" title="Like image"></i></button>
-            <button class="AddF"><i class="fa-solid fa-plus" title="Add image to collection"></i></button>
+            <button class="Download"><i class="fa-solid fa-download fa-fade" title="Download image"></i></button>
+            <button class="Like" onclick="toggleLike(this)"><i class="fa-solid fa-heart fa-fade" title="Like image"></i></button>
+            <button class="AddF"  onclick="addToCollection(this)"><i class="fa-solid fa-plus fa-fade" title="Add image to collection"></i></button>
         </div>
         <div class="Image">
             <img src="C:\Users\boith\OneDrive\Documentos\SMWSP_Collection\Images\Street Photography\marc-kleen-e1f9yY-DzoY-unsplash.jpg"title="China street"width="388"height="400">
-            <button class="Download"><i class="fa-solid fa-download" title="Download image"></i></button>
-            <button class="Like" onclick="toggleLike(this)"><i class="fa-solid fa-heart" title="Like image"></i></button>
-            <button class="AddF"><i class="fa-solid fa-plus" title="Add image to collection"></i></button>
+            <button class="Download"><i class="fa-solid fa-download fa-fade" title="Download image"></i></button>
+            <button class="Like" onclick="toggleLike(this)"><i class="fa-solid fa-heart fa-fade" title="Like image"></i></button>
+            <button class="AddF"  onclick="addToCollection(this)"><i class="fa-solid fa-plus fa-fade" title="Add image to collection"></i></button>
         </div>
         <div class="Image">
             <img src="C:\Users\boith\OneDrive\Documentos\SMWSP_Collection\Images\Street Photography\matteo-catanese-PI8Hk-3ZcCU-unsplash.jpg"title="Busy street"width="388"height="400">
-            <button class="Download"><i class="fa-solid fa-download" title="Download image"></i></button>
-            <button class="Like" onclick="toggleLike(this)"><i class="fa-solid fa-heart" title="Like image"></i></button>
-            <button class="AddF"><i class="fa-solid fa-plus" title="Add image to collection"></i></button>
+            <button class="Download"><i class="fa-solid fa-download fa-fade" title="Download image"></i></button>
+            <button class="Like" onclick="toggleLike(this)"><i class="fa-solid fa-heart fa-fade" title="Like image"></i></button>
+            <button class="AddF"  onclick="addToCollection(this)"><i class="fa-solid fa-plus fa-fade" title="Add image to collection"></i></button>
         </div>
         <div class="Image">
             <img src="C:\Users\boith\OneDrive\Documentos\SMWSP_Collection\Images\Street Photography\matthew-henry-Ix1TiS-E17E-unsplash.jpg"title="Awesome"width="388"height="400">
-            <button class="Download"><i class="fa-solid fa-download" title="Download image"></i></button>
-            <button class="Like" onclick="toggleLike(this)"><i class="fa-solid fa-heart" title="Like image"></i></button>
-            <button class="AddF"><i class="fa-solid fa-plus" title="Add image to collection"></i></button>
+            <button class="Download"><i class="fa-solid fa-download fa-fade" title="Download image"></i></button>
+            <button class="Like" onclick="toggleLike(this)"><i class="fa-solid fa-heart fa-fade" title="Like image"></i></button>
+            <button class="AddF"  onclick="addToCollection(this)"><i class="fa-solid fa-plus fa-fade" title="Add image to collection"></i></button>
         </div>
         <div class="Image">
             <img src="C:\Users\boith\OneDrive\Documentos\SMWSP_Collection\Images\Street Photography\photographer-frederik-trovatten-xh-aTtGuJws-unsplash.jpg"title="Dog on the street"width="388"height="400">
-            <button class="Download"><i class="fa-solid fa-download" title="Download image"></i></button>
-            <button class="Like" onclick="toggleLike(this)"><i class="fa-solid fa-heart" title="Like image"></i></button>
-            <button class="AddF"><i class="fa-solid fa-plus" title="Add image to collection"></i></button>
+            <button class="Download"><i class="fa-solid fa-download fa-fade" title="Download image"></i></button>
+            <button class="Like" onclick="toggleLike(this)"><i class="fa-solid fa-heart fa-fade" title="Like image"></i></button>
+            <button class="AddF"  onclick="addToCollection(this)"><i class="fa-solid fa-plus fa-fade" title="Add image to collection"></i></button>
         </div>
         <div class="Image">
             <img src="C:\Users\boith\OneDrive\Documentos\SMWSP_Collection\Images\Street Photography\ravi-sharma-GwliUO0QwFQ-unsplash.jpg"title="Taking pics on the street"width="388"height="400">
-            <button class="Download"><i class="fa-solid fa-download" title="Download image"></i></button>
-            <button class="Like" onclick="toggleLike(this)"><i class="fa-solid fa-heart" title="Like image"></i></button>
-            <button class="AddF"><i class="fa-solid fa-plus" title="Add image to collection"></i></button>
+            <button class="Download"><i class="fa-solid fa-download fa-fade" title="Download image"></i></button>
+            <button class="Like" onclick="toggleLike(this)"><i class="fa-solid fa-heart fa-fade" title="Like image"></i></button>
+            <button class="AddF"  onclick="addToCollection(this)"><i class="fa-solid fa-plus fa-fade" title="Add image to collection"></i></button>
         </div>   
         <div class="Image">
             <img src="C:\Users\boith\OneDrive\Documentos\SMWSP_Collection\Images\Street Photography\xingchen-yan-2wpcvK7odoM-unsplash.jpg"title="Thin Capture"width="388"height="400">
-            <button class="Download"><i class="fa-solid fa-download" title="Download image"></i></button>
-            <button class="Like" onclick="toggleLike(this)"><i class="fa-solid fa-heart" title="Like image"></i></button>
-            <button class="AddF"><i class="fa-solid fa-plus" title="Add image to collection"></i></button>
+            <button class="Download"><i class="fa-solid fa-download fa-fade" title="Download image"></i></button>
+            <button class="Like" onclick="toggleLike(this)"><i class="fa-solid fa-heart fa-fade" title="Like image"></i></button>
+            <button class="AddF"  onclick="addToCollection(this)"><i class="fa-solid fa-plus fa-fade" title="Add image to collection"></i></button>
         </div>   
     </div>
-    <div class="MoreInfo">
-        <div class="MOI">More Info:</div>
-            <ul>
-            <li><a href="SMWSP_Collection.html">Home</a></li>
-            <li><a href="Service.html">Service</a></li>
-            <li><a href="Contact Us.html">Contact Us</a></li>
-            <li><a href="AboutUs.html">About Us</a></li>
-            </ul>
-            </p>
-    </div>
-    <div class="TYFV">Thank you for visiting.</div>
-</body>
+    <footer id="contact">
+        <p>&copy; 2024 SMWSP Collection | Contact us: 
+            <a href="mailto:boithlomolo@gmail.com">Boithlomolo@gmail.com</a> 
+            <a href="tel:0679309258">067 930 9258</a>
+        </p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.twitter.com" target="_blank" aria-label="Twitter">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <div class="TYFV">Thank you for visiting.</div>
+        </div>
+    </footer>
+    </body>
+    <script>
+        // add containers
+        window.addEventListener('load', function() {
+            document.body.classList.add('loaded');
+        });
+    
+        // //menu bar
+        function toggleDropdown() {
+        const dropdown = document.getElementById('moreInfoDropdown');
+        dropdown.classList.toggle('show');
+    }
+
+    // Close dropdown if clicked outside
+    window.onclick = function(event) {
+        const dropdown = document.getElementById("moreInfoDropdown");
+        if (!event.target.closest('.menu-bar') && !event.target.closest('.dropdown')) {
+            dropdown.classList.remove('show');
+        }
+    }
+    </script>
 </html>
    

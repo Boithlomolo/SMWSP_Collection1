@@ -16,6 +16,6 @@
     clonedImage.removeChild(clonedButton);
 
     // Append the cloned image to the "My Collection" section
-    const collection = document.querySelector('.my-collection');
+    const collection = document.querySelector('.MyCollection');
     collection.appendChild(clonedImage);
 }
