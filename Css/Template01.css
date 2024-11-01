@@ -32,7 +32,7 @@ padding: 10px 10px;
 text-decoration: none;
 }
 nav a:hover{
-color: dodgerblue;
+color:  #00bcd4;
 }
 .Container{
 display: grid;
@@ -213,7 +213,7 @@ cursor: pointer;
 .Download:hover,
 .AddF:hover,
 .Like:hover{
-background-color: #6E85B7;
+background-color:  #00bcd4;
 }
 .Like,
 .AddF{
@@ -223,7 +223,7 @@ background: transparent;
 cursor: pointer;
 }
 .Like.liked{
-background-color: #6E85B7;
+background-color: #00bcd4;
 border-color: white;
 color: palevioletred;
 }
@@ -254,7 +254,7 @@ transition: opacity 1s ease-out, transform 1s ease-out;
 .text-container h2 {
 font-size: 40px;
 margin-bottom: 20px;
-color:#6E85B7;
+color: #00bcd4;
 text-align: left;
 }
 .brief-text {
@@ -355,7 +355,7 @@ text-align: center;
 margin-bottom: 15px;
 }
 .Upgrade {
-background-color: #6E85B7;
+background-color:  #00bcd4;
 color: #fff;
 border: none;
 padding: 10px 20px;
@@ -370,7 +370,7 @@ background-color: lightgrey;
 }
 .Upgrade:focus {
 outline: none;
-box-shadow: 0 0 5px #6E85B7;
+box-shadow: 0 0 5px  #00bcd4;
 }
 .main-container2 {
 display: flex;
@@ -424,7 +424,7 @@ transform: translateX(0);
 }
 /* Footer */
 footer {
-background-color:#6E85B7;
+background-color: #00bcd4;
 color: black;
 text-align: center;
 padding: 20px;
