@@ -458,3 +458,57 @@ text-decoration: none;
 .social-icons a:hover {
 color: #007bff;
 }
+/* Premium container */
+.premium-container{
+max-width: 400px;
+margin:20px auto;
+padding:20px;
+border:1px solid lightgrey;
+border-radius: 10px;
+background-color: white;
+box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+text-align: center;
+}
+.premium-container .brief-text{
+font-size: 18px;
+color:#333;
+margin-bottom: 15px;
+}
+.premium-container .premium-images{
+display: flex;
+justify-content: space-around;
+margin-bottom:15px;
+}
+.premium-container .premium-images img{
+width:80px;
+height:80px;
+object-fit: cover;
+border-radius: 5px;
+transition: transform 0.3s;
+}
+.premium-container .premium-images img:hover{
+transform: scale(1.1);
+}
+.premium-container ul{
+list-style-type:none;
+padding: 0;
+margin:10px 0 20px;
+font-size:16px;
+color:#555
+}
+.premium-container ul li{
+margin:5px 0;
+}
+.premium-container .pricing-options{
+display:flex;
+justify-content: center;
+gap:15px;
+margin-bottom: 20px;
+}
+.premium-container .pricing-options label{
+font-size: 16px;
+color:#444;
+}
+.premium-container .pricing-options input[type="radio"]{
+margin-right: 5px;
+}
